@@ -13,5 +13,5 @@ jobs:
       - name: installing dependencies
         run: |
           go get github.com/lyracampos/go-gRPC/internal/database
-      - name: Display Go version
-        run: go version
+      - name: run app
+        run: go run ./cmd/main.go
