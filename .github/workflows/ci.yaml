@@ -11,6 +11,7 @@ jobs:
       # - run: go test
       #- run: go run ./cmd/main.go
       - name: installing dependencies
-        run: go get .
+        run: |
+          go get github.com/lyracampos/go-gRPC/internal/database
       - name: Display Go version
         run: go version
