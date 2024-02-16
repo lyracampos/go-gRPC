@@ -2,6 +2,6 @@
 run:
 	go run ./cmd/main.go
 
-.PHONY: proto/generate
+.PHONY: protos/generate
 proto/generate:
 	protoc --go_out=. --go-grpc_out=. proto/server.proto
